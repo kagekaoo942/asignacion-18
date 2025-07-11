@@ -12,10 +12,76 @@
 </head>
 
 <body>
+    <!-- barra de navegacion -->
+    <nav class="navbar">
+        <h1>Social Like</h1>
+    </nav>
+
+    <!-- container(contenedor) -->
+    <div class="container">
+        <!-- titulo -->
+        <h2>Ultimas publicaciones</h2>
+
+        <!-- row(fila) -->
+        <div class="row">
+            <!-- columana 1 -->
+            <div class="col-1">
+                <div class="card-profile">
+                    <img src="static/img/misato.png" alt="Misato">
+                    <h3>Misato</h3>
+                    <button>Mi perfil</button>
+
+                </div>
+            </div>
+            <!-- columana 2 -->
+            <div class="col-2">
+                <div class="card-post">
+                    <div class="card-content">
+                        <h3>rei</h3>
+                        <p>
+                            Acabo de configurar este nuevo <a href="#">bot de Discord</a>, cuéntenme que opinan ustedes.
+                        </p>
+                        <div class="card-like">
+                            <p><span id="like1">0</span> Like(s)</p>
+                            <button onclick="darLike1()">Like</button>
+                        </div>
+                    </div>
+                </div>
 
 
+                <div class="card-post">
+                    <div class="card-content">
+                        <h3>Asuka</h3>
+                        <p>
+                            Acabo de leer este <a href="#">nuevo comic.</a> denle un vistazo.
+                        </p>
+                        <div class="card-like">
+                            <p><span id="like2">0</span> Like(s)</p>
+                            <button onclick=" darLike2()">Like</button>
+                        </div>
+                    </div>
+                </div>
 
-    <script src="static/js/script.js"></script>
+
+                <div class="card-post">
+                    <div class="card-content">
+                        <h3>Shinji</h3>
+                        <p>
+                            no puedo dejar de escuchar este <a href="#">album</a>. ¿a quien mas le gusta?.
+                        </p>
+                        <div class="card-like">
+                            <p><span id="like3">0</span> Like(s)</p>
+                            <button onclick="darLike3()">Like</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- script JS -->
+        <script src="static/js/script.js"></script>
 </body>
 
 </html>
